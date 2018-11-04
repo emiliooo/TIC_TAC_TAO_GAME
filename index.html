@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>game TIC TAC TAO</title>
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    table{
+        margin: 0 auto;
+    }
+    .Square {
+        width: 100px;
+        height: 100px;
+        border: 3px black;
+        border-style: double;
+        text-align: center;
+        font-size: 77px;
+        font-family: 'Poor Story', cursive;
+    }
+    h4{
+        text-align: center;
+        margin: 50px;
+        color:blue;
+        font-family: 'Poor Story', cursive;
+        font-size: 40px;
+        border-bottom: 2px solid black
+    }
+    .message{
+        font-family: 'Poor Story', cursive;
+        text-align: center;
+        border-bottom: 2px solid black;
+        border-style: double;
+        width: 240px;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+    a{
+        font-size: 25px;
+        font-family: 'Poor Story', cursive;
+    }
+
+</style>
+
+<body onload="StartGame()">
+    <table>
+        <h4>TIC TAC TOE GAME</h4>
+        <div class="message"></div>
+        <tr>
+            <td class="Square" id="s1" onclick="NextMove(this)"></td>
+            <td class="Square" id="s2" onclick="NextMove(this)"></td>
+            <td class="Square" id="s3" onclick="NextMove(this)"></td>
+        </tr>
+        <tr>
+            <td class="Square" id="s4" onclick="NextMove(this)"></td>
+            <td class="Square" id="s5" onclick="NextMove(this)"></td>
+            <td class="Square" id="s6" onclick="NextMove(this)"></td>
+        </tr>
+        <tr>
+            <td class="Square" id="s7" onclick="NextMove(this)"></td>
+            <td class="Square" id="s8" onclick="NextMove(this)"></td>
+            <td class="Square" id="s9" onclick="NextMove(this)"></td>
+        </tr>
+        
+    </table>
+<a href="" click="StartGame()">start again</a>
+
+<script src="main.js"></script>
+</body>
+
+</html>
